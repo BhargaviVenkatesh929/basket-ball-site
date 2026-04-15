@@ -1,0 +1,108 @@
+body {
+    margin: 0;
+    height: 100vh;
+    background: #1B244A;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Orbitron", sans-serif;
+}
+
+.card {
+    background: #111827;
+    padding: 30px;
+    border-radius: 15px;
+    width: 400px;
+    text-align: center;
+    color: white;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+}
+
+#game-status {
+    margin: 0;
+    opacity: 0.8;
+}
+
+#commentary {
+    margin: 12px 0 0;
+    min-height: 40px;
+    color: #D1D5DB;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+#timer {
+    margin: 10px 0 20px;
+    font-size: 40px;
+    color: #FCD34D;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.team {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.points {
+    background: black;
+    width: 100px;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0;
+    border-radius: 8px;
+}
+
+.points p {
+    font-size: 36px;
+    color: #F94F6D;
+    margin: 0;
+}
+
+.btns {
+    display: flex;
+    gap: 8px;
+}
+
+button {
+    background: transparent;
+    border: 1px solid #9CA3AF;
+    color: #9CA3AF;
+    padding: 6px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+select {
+    background: transparent;
+    border: 1px solid #9CA3AF;
+    color: #9CA3AF;
+    padding: 6px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: "Orbitron", sans-serif;
+}
+
+select option {
+    background: #111827;
+    color: white;
+}
+
+button:hover {
+    background: #374151;
+    color: white;
+}
+
+.controls {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 10px;
+}
