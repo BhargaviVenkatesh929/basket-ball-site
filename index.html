@@ -1,0 +1,67 @@
+<html>
+<head>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap');
+    </style>
+</head>
+
+<body>
+    <div class="card">
+
+        <!-- STATUS -->
+        <h2 id="game-status">Game On</h2>
+        <p id="commentary">Home start stronger and lead by 7.</p>
+
+        <!-- TIMER -->
+        <h1 id="timer">12:00</h1>
+
+        <!-- SCOREBOARD -->
+        <div class="container">
+
+            <!-- HOME -->
+            <div class="team">
+                <h3>HOME</h3>
+                <div class="points">
+                    <p id="home-score">12</p>
+                </div>
+                <div class="btns">
+                    <button onclick="addHome(1)">+1</button>
+                    <button onclick="addHome(2)">+2</button>
+                    <button onclick="addHome(3)">+3</button>
+                </div>
+            </div>
+
+            <!-- GUEST -->
+            <div class="team">
+                <h3>GUEST</h3>
+                <div class="points">
+                    <p id="guest-score">5</p>
+                </div>
+                <div class="btns">
+                    <button onclick="addGuest(1)">+1</button>
+                    <button onclick="addGuest(2)">+2</button>
+                    <button onclick="addGuest(3)">+3</button>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- CONTROLS -->
+        <div class="controls">
+            <button onclick="newGame()">New Game</button>
+            <button onclick="setHalfTime()">Half</button>
+            <button onclick="setFullTime()">Full</button>
+            <button id="voice-toggle" onclick="toggleVoice()">Voice: Off</button>
+            <button id="style-toggle" onclick="toggleCommentaryStyle()">Style: NBA</button>
+        </div>
+
+        <div class="controls">
+            <button onclick="startTimer()">Start</button>
+            <button onclick="stopTimer()">Stop</button>
+        </div>
+
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
